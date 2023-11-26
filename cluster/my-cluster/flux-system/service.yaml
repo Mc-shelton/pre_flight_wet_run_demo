@@ -9,3 +9,4 @@ spec:
   ports:
   - port: 3122
     targetPort: 3122
+  type: NodePort
