@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pre-run
-        image: mcsheltonomondi/test-app
+        image: mcsheltonomondi/pre-run
         resources:
           limits:
             memory: "128Mi"
