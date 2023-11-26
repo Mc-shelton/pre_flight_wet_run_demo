@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pre-run
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: pre-run
+  template:
+    metadata:
+      labels:
+        app: pre-run
+    spec:
+      containers:
+      - name: pre-run
+        image: mcshelltonomondi/test-app
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3122

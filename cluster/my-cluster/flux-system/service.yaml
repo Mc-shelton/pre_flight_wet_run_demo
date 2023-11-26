@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pre-run-service
+  namespace: default
+spec:
+  selector:
+    app: pre-run
+  ports:
+  - port: 3122
+    targetPort: 3122
